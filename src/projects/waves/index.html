@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv='Content-Type' content='text/html; charset=windows-1252'>
+    <link rel='stylesheet' href='../../styles/index.css'>
+  </head>
+  <body>
+    <div class='header'>
+      <div class='main'>
+        <a href='/'><h1>James Moulang</h1></a>
+      </div>
+    </div>
+    <div class='main'>
+      <h1>Waves</h1>
+      <p>June 2016</p>
+      <p>
+        I was playing (and am) a lot of <a href='http://tagpro.koalabeast.com/'><em>TagPro</em></a> when I made <em>Waves</em>. <em>TagPro's</em> controls have a relatively low acceleration and friction, giving the movement a sense of weight and smoothness. I wanted to make a game along these lines, but I wanted it to be relaxing, something I could dip into and play for a few minutes if I was stressed.
+      </p>
+      <p>
+        To that end I didn't add any scores or levels, but even satisfying movement needs something to aim at and some obstacles to rub against. So, I added a simple 'chase the dot' mechanic that I modelled after my skittish cat. If the white dot is too far away from you, it will be come cautious and move towards you. Too close, and it will flee. To catch the dot, the player often has to get up to their max speed, without overcommitting and colliding with a wave.
+      </p>
+      <p>
+        I also added some simple adaptive difficulty to the game. If the player catches the dot, the wave frequency increases. Hit a wave, and the waves become less frequent.
+      </p>
+      <p>
+        The waves themselves are the source of the sounds in the game. For the wave sounds, I took a singing bowl sample from Freesound, and shifted it along a pentatonic scale. The whole sound is the sample, reversed, followed by the sample played forwards. This matches the 'fade in, fade out' action of the waves.
+      </p>
+      <p>
+        Hopefully you'll also find <em>Waves</em> relaxing.
+      </p>
+      <p>Arrow keys to move. F to toggle fullscreen.</p>
+      <div id='root' style='width: 960px; height: 640px;'>
+        <canvas id='myCanvas'></canvas>
+      </div>
+      <script type='text/javascript' src='./main.js'></script>
+    </div>
+  </body>
+</html>
